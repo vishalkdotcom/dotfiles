@@ -4,10 +4,10 @@ local M = {}
 
 wezterm.on("toggle-colorscheme", function(window, pane)
 	local overrides = window:get_config_overrides() or {}
-	if overrides.color_scheme == "Flexoki Dark" then
+	if overrides.color_scheme == "Night Owlish Light" then
 		overrides.color_scheme = "Adventure Time (Gogh)"
 	else
-		overrides.color_scheme = "Flexoki Dark"
+		overrides.color_scheme = "Night Owlish Light"
 	end
 	window:set_config_overrides(overrides)
 end)

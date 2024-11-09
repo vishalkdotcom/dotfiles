@@ -5,6 +5,9 @@ local M = {}
 function M.setup(config)
 	config.font = wezterm.font_with_fallback({
 		{
+			family = "MesloLGMDZ Nerd Font Mono",
+		},
+		{
 			family = "FiraCode Nerd Font",
 		},
 		{
@@ -17,7 +20,7 @@ function M.setup(config)
 			family = "Hack Nerd Font",
 		},
 	})
-	config.font_size = 9
+	config.font_size = 10
 	-- config.underline_thickness = "200%"
 	-- config.underline_position = "-3pt"
 	-- config.adjust_window_size_when_changing_font_size = false

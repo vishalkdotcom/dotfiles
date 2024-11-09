@@ -1,5 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-palette = "flexoki_dark"
+palette = "night_owlish_light"
 
 # Using ANSI colors
 # https://i.stack.imgur.com/KTSQa.png
@@ -245,20 +245,20 @@ symbol = " "
 [spack]
 symbol = "🅢 "
 
-[palettes.flexoki_dark]
-black = "#100f0f"
-red = "#af3029"
-green = "#66800b"
-yellow = "#ad8301"
-blue = "#205ea6"
-purple = "#5e409d"
-cyan = "#24837b"
-white = "#cecdc3"
-bright-black = "#575653"
-bright-red = "#d14d41"
-bright-green = "#879a39"
-bright-yellow = "#d0a215"
-bright-blue = "#4385be"
-bright-purple = "#8b7ec8"
-bright-cyan = "#3aa99f"
-bright-white = "#fffcf0"
+[palettes.night_owlish_light]
+black = "#011627"
+red = "#d3423e"
+green = "#2aa298"
+yellow = "#daaa01"
+blue = "#4876d6"
+purple = "#403f53"
+cyan = "#08916a"
+white = "#7a8181"
+bright-black = "#7a8181"
+bright-red = "#f76e6e"
+bright-green = "#49d0c5"
+bright-yellow = "#dac26b"
+bright-blue = "#5ca7e4"
+bright-purple = "#697098"
+bright-cyan = "#00c990"
+bright-white = "#989fb1"
