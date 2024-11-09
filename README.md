@@ -1,4 +1,4 @@
-# HeyItsGilbert's dotfiles!
+# Vishal's dotfiles!
 
 This repo is set up with @twpayne/chezmoi. Chezmoi will also install some
 applications, please take care to review the scripts to make sure you want those
@@ -21,7 +21,7 @@ choco install chezmoi delta git pwsh
 
 ### For all
 ```shell
-chezmoi init --apply --verbose https://github.com/HeyItsGilbert/dotfiles.git
+chezmoi init --apply --verbose https://github.com/vishalkdotcom/dotfiles.git
 ```
 
 > [!NOTE]
