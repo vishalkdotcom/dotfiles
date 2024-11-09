@@ -1,14 +1,14 @@
 {{- if eq .chezmoi.os "windows" }}
 ["./AppData/Local/nvim"]
     type = "git-repo"
-    url = "https://github.com/HeyItsGilbert/nvim"
+    url = "https://github.com/vishalkdotcom/nvim"
 [".glzr/zebar/quiet-velvet"]
     type = "git-repo"
-    url = "https://github.com/HeyItsGilbert/quiet-velvet"
+    url = "https://github.com/vishalkdotcom/quiet-velvet"
 {{- else }}
 [".config/nvim"]
     type = "git-repo"
-    url = "https://github.com/HeyItsGilbert/nvim"
+    url = "https://github.com/vishalkdotcom/nvim"
 [".oh-my-zsh"]
     type = "archive"
     url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
