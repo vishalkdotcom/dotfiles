@@ -5,7 +5,7 @@ palette = "night_owlish_light"
 # https://i.stack.imgur.com/KTSQa.png
 format = """
 [\uE0B6](fg:purple)${env_var.is_elevated_session}[$directory](bg:purple)\
-[\uE0B0](bg:bright-black fg:purple)[$git_branch](bg:bright-black)[\uE0B0](fg:bright-black bg:none)\
+[\uE0B0](bg:white fg:purple)[$git_branch](bg:white fg:black)[\uE0B0](fg:white bg:none)\
 $git_status$git_state\
 $fill $all ${env_var.next_meeting} $time $line_break\
 $shell $character\
@@ -39,15 +39,14 @@ read_only = " 󰌾"
 [git_branch]
 always_show_remote = true
 format = "[ $branch $symbol$remote_name/$remote_branch ]($style)"
-symbol = " "
-#format = "[ $symbol$branch ]($style)"
-style = "bg:bright-black fg:white"
+symbol = " "
+style = "bg:white fg:black"
 
 [git_status]
 # Show the info relative to the upstream first: how many commits ahead/behind/diverged/conflicted
 # Show the info for current working set after: deleted, staged, renamed, modified, untracked.
 format = "[$ahead$behind$diverged$conflicted$deleted$staged$renamed$modified$untracked]($style)"
-style = "bg:green"
+style = "fg:green"
 conflicted = "[ ≠$count](fg:purple)"
 ahead = "[ ⇡$count](bold fg:purple)"
 behind = "[ ⇣$count](bold fg:purple)"
@@ -246,19 +245,19 @@ symbol = " "
 symbol = "🅢 "
 
 [palettes.night_owlish_light]
-black = "#011627"
-red = "#d3423e"
-green = "#2aa298"
-yellow = "#daaa01"
-blue = "#4876d6"
-purple = "#403f53"
-cyan = "#08916a"
-white = "#7a8181"
-bright-black = "#7a8181"
-bright-red = "#f76e6e"
-bright-green = "#49d0c5"
-bright-yellow = "#dac26b"
-bright-blue = "#5ca7e4"
-bright-purple = "#697098"
-bright-cyan = "#00c990"
-bright-white = "#989fb1"
+black = "#403f53"      # base text color
+red = "#de3d3b"        # errors
+green = "#08916a"      # success
+yellow = "#daaa01"     # warnings
+blue = "#288ed7"       # info
+purple = "#d6438a"     # magenta/purple
+cyan = "#2AA298"       # cyan
+white = "#F0F0F0"      # background
+bright-black = "#403f53"
+bright-red = "#de3d3b"
+bright-green = "#08916a"
+bright-yellow = "#daaa01"
+bright-blue = "#288ed7"
+bright-purple = "#d6438a"
+bright-cyan = "#2AA298"
+bright-white = "#F0F0F0"

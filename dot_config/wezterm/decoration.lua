@@ -2,17 +2,38 @@ local wezterm = require("wezterm")
 
 local M = {}
 
+-- Night Owl Light palette
+local palette = {
+	black = "#403f53",
+	red = "#de3d3b",
+	green = "#08916a",
+	yellow = "#daaa01",
+	blue = "#288ed7",
+	purple = "#d6438a",
+	cyan = "#2AA298",
+	white = "#F0F0F0",
+	bright_black = "#403f53",
+	bright_red = "#de3d3b",
+	bright_green = "#08916a",
+	bright_yellow = "#daaa01",
+	bright_blue = "#288ed7",
+	bright_purple = "#d6438a",
+	bright_cyan = "#2AA298",
+	bright_white = "#F0F0F0",
+}
+
 wezterm.on("format-tab-title", function(tab, _, _, _, hover, max_width)
-	local edge_background = "#FF0000"
-	local background = "#2b2042"
-	local foreground = "#878580"
+	local edge_background = palette.red
+	local background = palette.white
+	local foreground = palette.black
 
 	if tab.is_active then
-		background = "#5E409D"
-		foreground = "#B7B5AC"
+		background = palette.purple
+		foreground = palette.bright_white
 	elseif hover then
-		background = "#3b3052"
-		foreground = "#909090"
+		-- background = palette.white
+		background = "#e4e4e4"
+		foreground = palette.black
 	end
 
 	local edge_foreground = background
@@ -51,7 +72,7 @@ function M.setup(config, isWindows11)
 	if isWindows11 then
 		config.window_background_opacity = 0.5
 		-- config.win32_system_backdrop = "Acrylic"
-		config.win32_acrylic_accent_color = "rgb(94, 64, 157)"
+		config.win32_acrylic_accent_color = palette.purple
 		config.webgpu_power_preference = "HighPerformance"
 		config.front_end = "OpenGL"
 		config.prefer_egl = true
@@ -62,6 +83,7 @@ function M.setup(config, isWindows11)
 			bottom = 5,
 		}
 	end
+	config.color_scheme = "Night Owlish Light"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.default_cursor_style = "BlinkingBar"
 	config.use_fancy_tab_bar = true
@@ -75,7 +97,7 @@ function M.setup(config, isWindows11)
 
 		-- The overall background color of the tab bar when
 		-- the window is not focused
-		inactive_titlebar_bg = "#333333",
+		inactive_titlebar_bg = palette.white,
 	}
 end
 

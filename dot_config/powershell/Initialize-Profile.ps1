@@ -141,5 +141,5 @@ function Initialize-Profile {
     $Env:ISELEVATEDSESSION = $true
   }
 
-  Get-Motd
+  Get-MessageOfTheDay
 }
